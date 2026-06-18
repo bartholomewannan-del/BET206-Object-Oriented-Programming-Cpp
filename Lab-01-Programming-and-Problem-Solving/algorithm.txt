@@ -1,0 +1,19 @@
+ALGORITHM: Check if a String Contains 'a' or 'A'
+
+1. START
+2. DECLARE a string variable 'text'
+3. DISPLAY "Enter a string: "
+4. READ input from user and store it in 'text' using getline() to allow spaces
+5. DECLARE a boolean variable 'found' and set it to false
+6. FOR each character 'ch' in 'text' DO
+       IF 'ch' is equal to 'a' OR 'ch' is equal to 'A' THEN
+           SET 'found' to true
+           EXIT the loop // no need to check remaining characters
+       END IF
+   END FOR
+7. IF 'found' is true THEN
+       DISPLAY "Yes, the string contains 'a'"
+   ELSE
+       DISPLAY "No, the string does not contain 'a'"
+   END IF
+8. END
