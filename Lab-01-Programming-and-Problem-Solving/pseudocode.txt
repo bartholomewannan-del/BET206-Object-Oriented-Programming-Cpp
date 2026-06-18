@@ -1,0 +1,21 @@
+BEGIN
+    DECLARE text AS STRING
+    OUTPUT "Enter a string: "
+    INPUT text
+
+    DECLARE found AS BOOLEAN
+    SET found = FALSE
+
+    FOR EACH character ch IN text DO
+        IF ch = 'a' OR ch = 'A' THEN
+            SET found = TRUE
+            BREAK
+        END IF
+    END FOR
+
+    IF found = TRUE THEN
+        OUTPUT "Yes, the string contains 'a'"
+    ELSE
+        OUTPUT "No, the string does not contain 'a'"
+    END IF
+END
